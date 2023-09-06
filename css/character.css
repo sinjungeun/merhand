@@ -1,0 +1,2737 @@
+@charset "utf-8";
+
+/* 
+어그로체
+font-family: 'SBAggro'; 
+300 500 700
+*/
+/* 카페24 슈퍼매직 */
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'TheJamsil';
+    font-size: 20px;
+    line-height: 40px;
+    color: #340a69;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+.h_logo {
+    padding-left: 50px;
+}
+
+#header {
+    background-color: white;
+}
+
+.h_inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h_hamberger {
+    position: relative;
+    padding-right: 50px;
+}
+
+.h_hamberger .h_btn_hover {
+    display: none;
+}
+
+.h_hamberger:hover .h_btn {
+    display: none;
+}
+
+.h_hamberger:hover .h_btn_hover {
+    display: block;
+    transition: all 1s;
+}
+
+.sidebar_menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url(./img/brand/side_menu_bg.png) no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+    position: fixed;
+}
+
+.x_btn {
+    display: flex;
+    justify-content: right;
+}
+
+.sidebar_menu_inner {
+    display: flex;
+}
+
+.sidebar_lnb {
+    width: 50%;
+    height: 100vh;
+    padding-top: 300px;
+    font-family: 'SBAggro';
+    font-size: 24px;
+    font-weight: 300;
+    color: #d0a1f5;
+    text-align: center;
+    background-color: #fee9ff;
+
+}
+
+.sidebar_lnb p {
+    line-height: 60px;
+}
+
+.sidebar_lnb h1 {
+    padding-bottom: 50px;
+}
+
+.sidebar_lnb_p_style {
+    font-weight: 500;
+}
+
+.sidebar_rnb {
+    width: 50%;
+    height: 100vh;
+    background-color: #fdd3ff;
+}
+
+.x_btn {
+    display: flex;
+    justify-content: right;
+    padding-top: 25px;
+    padding-right: 40px;
+}
+
+.sidebar_ul {
+    padding-top: 150px;
+}
+
+.about_menu,
+.shop_menu,
+.community_menu {
+    display: flex;
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    line-height: 55px;
+    padding-bottom: 35px;
+
+}
+
+.about_menu li,
+.shop_menu li,
+.community_menu li {
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.about_menu li a,
+.shop_menu li a,
+.community_menu li a {
+    color: #b885e0;
+
+}
+
+.about_menu_inner,
+.shop_menu_inner,
+.community_menu_inner {
+    display: flex;
+    font-weight: 300;
+    font-size: 30px;
+    padding-left: 20px;
+
+}
+
+.about_menu_inner li a,
+.shop_menu_inner li a,
+.community_menu_inner li a {
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s;
+    color: #000;
+    cursor: pointer;
+    background-image: linear-gradient(transparent 85%, #deb3ff 15%);
+}
+
+.about_menu_inner li a,
+.shop_menu_inner li a,
+.community_menu_inner li a {
+    color: #e1acff;
+}
+
+.about_menu_inner li a:hover,
+.shop_menu_inner li a:hover,
+.community_menu_inner li a:hover {
+    background-size: 100% 100%;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 870px;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/character/character_banner.png) no-repeat;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    z-index: 10;
+    animation: anime_textup 1.5s infinite;
+    animation-delay: .1s;
+}
+
+.cloud1_1 {
+    position: absolute;
+    top: 670px;
+    left: 50px;
+    animation: anime_textup 1.5s infinite;
+    animation-delay: .2s;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 650px;
+    right: 0;
+    z-index: 10;
+    animation: anime_textup 1.5s infinite;
+    animation-delay: .3s;
+}
+
+.cloud2_1 {
+    position: absolute;
+    top: 670px;
+    right: 50px;
+    animation: anime_textup 1.5s infinite;
+    animation-delay: .4s;
+}
+
+@keyframes anime_textup {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes ani_text {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.banner_text {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    /* z-index: 10;
+    position: absolute;
+    top: 700px;
+    left: 50%; */
+    font-size: 180px;
+    /* margin-left: -400px; */
+    color: #ae6ed3;
+    padding-top: 710px;
+    text-align: center;
+}
+
+/* .banner_text p .F {
+    animation: ani_text 1.5s infinite;
+}
+
+.banner_text p .F {
+    animation-delay: .1s;
+}
+
+.banner_text span:nth-of-type(2) {
+    animation-delay: .2s;
+}
+
+.banner_text span:nth-of-type(3) {
+    animation-delay: .3s;
+}
+
+.banner_text span:nth-of-type(4) {
+    animation-delay: .4s;
+}
+
+.banner_text span:nth-of-type(5) {
+    animation-delay: .5s;
+} */
+
+#fairies_about {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#fairies_about h1 {
+    padding: 100px;
+    text-align: center;
+}
+
+.faireies_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#fairies_about p {
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.poron_box {
+    transform: scale(0, 0);
+    padding-left: 25px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: face_move 0.5s linear 1s 1 forwards;
+    animation-delay: 0.7s;
+    /* transform: scale(0.1, 0.1); */
+}
+
+.ate_box {
+    transform: scale(0, 0);
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: face_move 0.5s linear 1s 1 forwards;
+    animation-delay: 0.9s;
+    /* transform: scale(0.1, 0.1); */
+}
+
+.narin_box {
+    transform: scale(0, 0);
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: face_move 0.5s linear 1s 1 forwards;
+    animation-delay: 1.1s;
+
+    /* transform: scale(0.1, 0.1); */
+}
+
+.tero_box {
+    transform: scale(0, 0);
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: face_move 0.5s linear 1s 1 forwards;
+    animation-delay: 1.3s;
+    /* transform: scale(0.1, 0.1); */
+}
+
+.kei_box {
+    transform: scale(0, 0);
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: face_move 0.5s linear 1s 1 forwards;
+    animation-delay: 1.5s;
+    /* transform: scale(0.1, 0.1); */
+}
+
+/* [data-scroll] {
+    opacity: 0;
+    transform: scale(0, 0);
+}
+
+[data-scroll='in'] {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+[data-scroll='out'] {
+    transform: scale(0, 0);
+
+} */
+
+@keyframes face_move {
+    30% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* narin */
+.c_background {
+    width: 100%;
+    height: 1785px;
+    background-color: #ffaebc;
+}
+
+.narin_b_inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.narin_b_inner>h1 {
+    text-align: center;
+    color: white;
+}
+
+.narin_b_inner>h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+#narin_about {
+    width: 1320px;
+    height: 1505px;
+    margin: 0px auto;
+    background-color: #f9738a;
+    position: relative;
+}
+
+.narin_header {
+    width: 1320px;
+    height: 70px;
+    background-color: #f9738a;
+}
+
+.narin_inner {
+    background-color: white;
+    width: 1250px;
+    height: 1390px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.narin_about_img {
+    width: 1250px;
+    height: 1390px;
+    background-color: white;
+}
+
+.narin_mark {
+    width: 130px;
+    height: 130px;
+    background-color: #f9738a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.narin_mark p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.narin_ticket {
+    width: 940px;
+    height: 410px;
+    display: flex;
+    position: relative;
+}
+
+.narin_text {
+    background-color: #ffaebc;
+    width: 725px;
+    height: 410px;
+    display: flex;
+}
+
+.narin_barcode {
+    background-color: #f9738a;
+    width: 215px;
+    height: 410px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.narin_barcode h1 {
+    padding-bottom: 20px;
+}
+
+.barcode_date {
+    padding-top: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.n_b_text {
+    width: 150px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #220942;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.n_b_text h3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+
+.nainr_imgbox {
+    width: 325px;
+    height: 410px;
+}
+
+.narin_ticket_text {
+    width: 400px;
+    height: 410px;
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+.n_text_border {
+    width: 153px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #f9738a;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.narin_ticket_text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.narin_ticket_text p {
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.narin_container {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.narin_img {
+    border-radius: 50%;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-top: 25px;
+    /* padding-right: 25px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(../img/character/narin_ticket_img_2.png);
+}
+
+
+/* 움직이는 글자 */
+.narin_circle {
+    padding-left: 30px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.narin_circle img {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.narin_face_mark {
+    position: absolute;
+    top: 230px;
+    right: 140px;
+    z-index: 20;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.n_t_move {
+    position: absolute;
+    top: 480px;
+    left: 40px;
+}
+
+.n_t_inner {
+    height: 983px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #d1697c;
+    /* padding: 10px 0; */
+    padding-left: 20px;
+    width: 90px;
+    font-size: 50px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.n_t_move p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    /* background-color: #d1697c;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: white;
+    animation: text_move 10s linear infinite;
+}
+
+
+@keyframes text_move {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        /* transform: translateY(-200px); */
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        /* transform: translateY(0px); */
+    }
+}
+
+.narin_body {
+    width: 625px;
+    height: 625px;
+    border-radius: 50%;
+    /* background: url(../img/character/narin_bg.png) no-repeat center; */
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.n_body_img {
+    position: absolute;
+    top: 600px;
+    left: 450px;
+}
+
+.narin_talk {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    text-align: center;
+}
+
+.narin_talk p {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    line-height: 63px;
+}
+
+@keyframes item_move {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.narin_item1 {
+    position: absolute;
+    top: 440px;
+    right: 140px;
+
+}
+
+.narin_item1 img {
+    animation: item_move 1s linear infinite alternate-reverse;
+
+}
+
+.narin_item2 {
+    position: absolute;
+    top: 685px;
+    right: 70px;
+    animation: item_move 1s linear infinite alternate-reverse;
+    animation-delay: .2s;
+}
+
+.narin_item3 {
+    position: absolute;
+    top: 960px;
+    right: 140px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.narin_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n_personality {
+    width: 462px;
+    height: 274px;
+    background-color: #ffccd5;
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.narin_flex h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mbti {
+    display: flex;
+}
+
+
+
+.mbti_text {
+    padding-left: 25px;
+}
+
+.mbti_bar {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mbti_1_body {
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mbti_1_bar {
+    background-color: #ba75f0;
+    width: 20%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .1s;
+}
+
+.mbti_2_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mbti_2_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 40%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .2s;
+}
+
+.mbti_3_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mbti_3_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 75%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .3s;
+}
+
+.mbti_4_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mbti_4_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 30%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .4s;
+}
+
+.n_turn {
+    margin-top: 50px;
+    padding-top: 0px;
+    padding-right: 25px;
+    width: 585px;
+    height: 274px;
+    background: url(../img/character/narin_turn_around.png) no-repeat;
+    text-align: center;
+}
+
+.n_turn h1 {
+    color: #efa5ff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes mbti {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* 포론 */
+
+.poron_background {
+    width: 100%;
+    height: 1785px;
+    background-color: #f0f6ff;
+}
+
+.poron_b_inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.poron_b_inner>h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 3px #8383e5;
+}
+
+.poron_b_inner>h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 3px #8383e5;
+}
+
+#poron_about {
+    width: 1320px;
+    height: 1505px;
+    margin: 0px auto;
+    background-color: #8383e5;
+    position: relative;
+}
+
+.poron_header {
+    width: 1320px;
+    height: 70px;
+    background-color: #8383e5;
+}
+
+.poron_inner {
+    background-color: white;
+    width: 1250px;
+    height: 1390px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.poron_about_img {
+    width: 1250px;
+    height: 1390px;
+    background-color: white;
+}
+
+.poron_mark {
+    width: 130px;
+    height: 130px;
+    background-color: #8383e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.poron_mark p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.poron_ticket {
+    width: 940px;
+    height: 410px;
+    display: flex;
+    position: relative;
+    margin-left: 0px;
+}
+
+.poron_text {
+    background-color: #f0f6ff;
+    width: 725px;
+    height: 410px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.poron_barcode {
+    background-color: #8383e5;
+    width: 215px;
+    height: 410px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.poron_barcode h1 {
+    padding-bottom: 20px;
+}
+
+.barcode_date {
+    padding-top: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.p_b_text {
+    width: 150px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #220942;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.p_b_text h3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+
+
+.poron_ticket_text {
+    width: 400px;
+    height: 410px;
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-left: 50px;
+
+}
+
+.p_text_border {
+    width: 153px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #8383e5;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.poron_ticket_text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.poron_ticket_text p {
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.poron_container {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.poron_img {
+    border-radius: 50%;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-top: 25px;
+    /* padding-right: 25px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(../img/character/poron_ticket_img.png);
+}
+
+/* 움직이는 글자 */
+.poron_circle {
+    width: 310px;
+    height: 410px;
+    /* padding-top: 90px;
+    padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.poron_circle img {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+
+}
+
+.poron_face_mark {
+    position: absolute;
+    top: 225px;
+    left: 137px;
+    z-index: 20;
+}
+
+/* @keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.p_t_move {
+    position: absolute;
+    top: 480px;
+    right: 60px;
+}
+
+.p_t_inner {
+    height: 983px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #7369d1;
+    /* padding: 10px 0; */
+    padding-left: 20px;
+    width: 90px;
+    font-size: 50px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.p_t_move p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    /* background-color: #d1697c;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: white;
+    animation: text_move 10s linear infinite;
+}
+
+
+@keyframes text_move {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        /* transform: translateY(-200px); */
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        /* transform: translateY(0px); */
+    }
+}
+
+.poron_body {
+    width: 625px;
+    height: 625px;
+    border-radius: 50%;
+    /* background: url(../img/character/narin_bg.png) no-repeat center; */
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.p_body_img {
+    position: absolute;
+    top: 600px;
+    left: 450px;
+}
+
+.poron_talk {
+    position: absolute;
+    top: 500px;
+    right: 150px;
+    text-align: center;
+}
+
+.poron_talk p {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    line-height: 63px;
+}
+
+
+.poron_item1 {
+    position: absolute;
+    top: 440px;
+    left: 130px;
+}
+
+.poron_item1 img {
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.poron_item2 {
+    position: absolute;
+    top: 685px;
+    left: 60px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.poron_item3 {
+    position: absolute;
+    top: 960px;
+    left: 130px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.poron_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.p_personality {
+    width: 462px;
+    height: 274px;
+    background-color: #e2eeff;
+    border-radius: 30px;
+    margin-right: 150px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.poron_flex h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mbti {
+    display: flex;
+}
+
+.mbti_text {
+    padding-left: 25px;
+}
+
+.mbti_bar {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mbti_1_body {
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.p_personality .mbti_1_bar {
+    background-color: #ba75f0;
+    width: 25%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .1s;
+}
+
+.mbti_2_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.p_personality .mbti_2_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 65%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .2s;
+}
+
+.mbti_3_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.p_personality .mbti_3_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 55%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .3s;
+}
+
+.mbti_4_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.p_personality .mbti_4_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 95%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .4s;
+}
+
+.p_turn {
+    margin-top: 50px;
+    padding-top: 0px;
+    /* padding-left: 50px; */
+    width: 585px;
+    height: 274px;
+    background: url(../img/character/poron_turn_around.png) no-repeat;
+    text-align: center;
+}
+
+.p_turn h1 {
+    color: #efa5ff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* tero */
+
+.tero_background {
+    width: 100%;
+    height: 1785px;
+    background-color: #ffeee3;
+}
+
+.tero_b_inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.tero_b_inner>h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 3px #ff8058;
+}
+
+.tero_b_inner>h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 3px #ff8058;
+}
+
+#tero_about {
+    width: 1320px;
+    height: 1505px;
+    margin: 0px auto;
+    background-color: #f9b39d;
+    position: relative;
+}
+
+.tero_header {
+    width: 1320px;
+    height: 70px;
+    background-color: #f9b39d;
+}
+
+.tero_inner {
+    background-color: white;
+    width: 1250px;
+    height: 1390px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.tero_about_img {
+    width: 1250px;
+    height: 1390px;
+    background-color: white;
+}
+
+.tero_mark {
+    width: 130px;
+    height: 130px;
+    background-color: #f9b39d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.tero_mark p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.tero_ticket {
+    width: 940px;
+    height: 410px;
+    display: flex;
+    position: relative;
+}
+
+.tero_text {
+    background-color: #ffeee3;
+    width: 725px;
+    height: 410px;
+    display: flex;
+}
+
+.tero_barcode {
+    background-color: #f9b39d;
+    width: 215px;
+    height: 410px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.tero_barcode h1 {
+    padding-bottom: 20px;
+}
+
+.barcode_date {
+    padding-top: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.t_b_text {
+    width: 150px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #220942;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.t_b_text h3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+
+.tero_imgbox {
+    width: 325px;
+    height: 410px;
+}
+
+.tero_ticket_text {
+    width: 400px;
+    height: 410px;
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+.t_text_border {
+    width: 153px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #f9b39d;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tero_ticket_text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.tero_ticket_text p {
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.tero_container {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tero_img {
+    border-radius: 50%;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-top: 25px;
+    /* padding-right: 25px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(../img/character/tero_ticket_img.png);
+}
+
+
+/* 움직이는 글자 */
+.tero_circle {
+    padding-left: 30px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.tero_circle img {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.tero_face_mark {
+    position: absolute;
+    top: 245px;
+    right: 130px;
+    z-index: 20;
+}
+
+
+.t_t_move {
+    position: absolute;
+    top: 480px;
+    left: 40px;
+}
+
+.t_t_inner {
+    height: 983px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #e9967c;
+    /* padding: 10px 0; */
+    padding-left: 20px;
+    width: 90px;
+    font-size: 50px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.t_t_move p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    /* background-color: #d1697c;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: white;
+    animation: text_move 10s linear infinite;
+}
+
+
+.tero_body {
+    width: 625px;
+    height: 625px;
+    border-radius: 50%;
+    /* background: url(../img/character/narin_bg.png) no-repeat center; */
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.t_body_img {
+    position: absolute;
+    top: 610px;
+    left: 390px;
+}
+
+.tero_talk {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    text-align: center;
+}
+
+.tero_talk p {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    line-height: 63px;
+}
+
+
+.tero_item1 {
+    position: absolute;
+    top: 440px;
+    right: 140px;
+
+}
+
+.tero_item1 img {
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.tero_item2 {
+    position: absolute;
+    top: 685px;
+    right: 70px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.tero_item3 {
+    position: absolute;
+    top: 960px;
+    right: 140px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.tero_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t_personality {
+    width: 462px;
+    height: 274px;
+    background-color: #ffe1ce;
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tero_flex h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mbti {
+    display: flex;
+}
+
+
+
+.mbti_text {
+    padding-left: 25px;
+}
+
+.mbti_bar {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mbti_1_body {
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.t_personality .mbti_1_bar {
+    background-color: #ba75f0;
+    width: 95%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .1s;
+}
+
+.mbti_2_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.t_personality .mbti_2_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 30%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .2s;
+}
+
+.mbti_3_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.t_personality .mbti_3_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 85%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .3s;
+}
+
+.mbti_4_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.t_personality .mbti_4_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 70%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .4s;
+}
+
+.t_turn {
+    margin-top: 50px;
+    padding-top: 0px;
+    padding-right: 25px;
+    width: 585px;
+    height: 274px;
+    background: url(../img/character/tero_turn_around.png) no-repeat;
+    text-align: center;
+}
+
+.t_turn h1 {
+    color: #a2a9ff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* ate */
+
+.ate_background {
+    width: 100%;
+    height: 1785px;
+    background-color: #fffcc5;
+}
+
+.ate_b_inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.ate_b_inner>h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 3px #c181ff;
+}
+
+.ate_b_inner>h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 3px #c181ff;
+}
+
+#ate_about {
+    width: 1320px;
+    height: 1505px;
+    margin: 0px auto;
+    background-color: #fffa99;
+    position: relative;
+}
+
+.ate_header {
+    width: 1320px;
+    height: 70px;
+    background-color: #fffa99;
+}
+
+.ate_inner {
+    background-color: white;
+    width: 1250px;
+    height: 1390px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.ate_about_img {
+    width: 1250px;
+    height: 1390px;
+    background-color: white;
+}
+
+.ate_mark {
+    width: 130px;
+    height: 130px;
+    background-color: #fffa99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.ate_mark p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.ate_ticket {
+    width: 940px;
+    height: 410px;
+    display: flex;
+    position: relative;
+    margin-left: 0px;
+}
+
+.ate_text {
+    background-color: #fffcc5;
+    width: 725px;
+    height: 410px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ate_barcode {
+    background-color: #fffa99;
+    width: 215px;
+    height: 410px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.ate_barcode h1 {
+    padding-bottom: 20px;
+}
+
+.barcode_date {
+    padding-top: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.a_b_text {
+    width: 150px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #220942;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.a_b_text h3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+
+
+.ate_ticket_text {
+    width: 400px;
+    height: 410px;
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-left: 50px;
+
+}
+
+.a_text_border {
+    width: 153px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fffa99;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ate_ticket_text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.ate_ticket_text p {
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.ate_container {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ate_img {
+    border-radius: 50%;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-top: 25px;
+    /* padding-right: 25px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(../img/character/ate_ticket_img.png);
+}
+
+/* 움직이는 글자 */
+.ate_circle {
+    width: 310px;
+    height: 410px;
+    /* padding-top: 90px;
+    padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.ate_circle img {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+
+}
+
+.ate_face_mark {
+    position: absolute;
+    top: 230px;
+    left: 130px;
+    z-index: 20;
+}
+
+.a_t_move {
+    position: absolute;
+    top: 480px;
+    right: 60px;
+}
+
+.a_t_inner {
+    height: 983px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #fffa99;
+    /* padding: 10px 0; */
+    padding-left: 20px;
+    width: 90px;
+    font-size: 50px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.a_t_move p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    /* background-color: #d1697c;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: white;
+    animation: text_move 10s linear infinite;
+}
+
+
+.ate_body {
+    width: 625px;
+    height: 625px;
+    border-radius: 50%;
+    /* background: url(../img/character/narin_bg.png) no-repeat center; */
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.a_body_img {
+    position: absolute;
+    top: 600px;
+    left: 440px;
+}
+
+.ate_talk {
+    position: absolute;
+    top: 500px;
+    right: 150px;
+    text-align: center;
+}
+
+.ate_talk p {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    line-height: 63px;
+}
+
+
+.ate_item1 {
+    position: absolute;
+    top: 440px;
+    left: 130px;
+}
+
+.ate_item1 img {
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.ate_item2 {
+    position: absolute;
+    top: 685px;
+    left: 60px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.ate_item3 {
+    position: absolute;
+    top: 960px;
+    left: 130px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.ate_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.a_personality {
+    width: 462px;
+    height: 274px;
+    background-color: #fffeeb;
+    border-radius: 30px;
+    margin-right: 150px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ate_flex h3 {
+    color: #220942;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mbti {
+    display: flex;
+}
+
+.mbti_text {
+    padding-left: 25px;
+}
+
+.mbti_bar {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mbti_1_body {
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.a_personality .mbti_1_bar {
+    background-color: #ba75f0;
+    width: 10%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .1s;
+}
+
+.mbti_2_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.a_personality .mbti_2_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 65%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .2s;
+}
+
+.mbti_3_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.a_personality .mbti_3_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 85%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .3s;
+}
+
+.mbti_4_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.a_personality .mbti_4_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 35%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .4s;
+}
+
+.a_turn {
+    margin-top: 50px;
+    padding-top: 0px;
+    /* padding-left: 50px; */
+    width: 585px;
+    height: 274px;
+    background: url(../img/character/ate_turn_around.png) no-repeat;
+    text-align: center;
+}
+
+.a_turn h1 {
+    color: #ade3ff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* kei */
+.kei_background {
+    width: 100%;
+    height: 1785px;
+    background-color: #f7ebff;
+}
+
+.kei_b_inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.kei_b_inner>h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 3px #c181ff;
+
+}
+
+.kei_b_inner>h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 0px 3px #c181ff;
+}
+
+#kei_about {
+    width: 1320px;
+    height: 1505px;
+    margin: 0px auto;
+    background-color: #dcbbfc;
+    position: relative;
+}
+
+.kei_header {
+    width: 1320px;
+    height: 70px;
+    background-color: #dcbbfc;
+}
+
+.kei_inner {
+    background-color: white;
+    width: 1250px;
+    height: 1390px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.kei_about_img {
+    width: 1250px;
+    height: 1390px;
+    background-color: white;
+}
+
+.kei_mark {
+    width: 130px;
+    height: 130px;
+    background-color: #dcbbfc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.kei_mark p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.kei_ticket {
+    width: 940px;
+    height: 410px;
+    display: flex;
+    position: relative;
+}
+
+.kei_text {
+    background-color: #f7ebff;
+    width: 725px;
+    height: 410px;
+    display: flex;
+}
+
+.kei_barcode {
+    background-color: #dcbbfc;
+    width: 215px;
+    height: 410px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.kei_barcode h1 {
+    padding-bottom: 20px;
+}
+
+.barcode_date {
+    padding-top: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.k_b_text {
+    width: 150px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #220942;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-left: 35px;
+    padding-left: 50px;
+}
+
+.k_b_text h3 {
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+
+.kei_imgbox {
+    width: 325px;
+    height: 410px;
+}
+
+.kei_ticket_text {
+    width: 400px;
+    height: 410px;
+    padding-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+.k_text_border {
+    width: 153px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #dcbbfc;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.kei_ticket_text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+
+.kei_ticket_text p {
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.kei_container {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.kei_img {
+    border-radius: 50%;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-top: 25px;
+    /* padding-right: 25px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(../img/character/kei_ticket_img.png);
+}
+
+
+/* 움직이는 글자 */
+.kei_circle {
+    padding-left: 30px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.kei_circle img {
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.kei_face_mark {
+    position: absolute;
+    top: 230px;
+    right: 140px;
+    z-index: 20;
+}
+
+.k_t_move {
+    position: absolute;
+    top: 480px;
+    left: 40px;
+}
+
+.k_t_inner {
+    height: 983px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #dcbbfc;
+    /* padding: 10px 0; */
+    padding-left: 20px;
+    width: 90px;
+    font-size: 50px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.k_t_move p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    /* background-color: #d1697c;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: white;
+    animation: text_move 10s linear infinite;
+}
+
+
+.kei_body {
+    width: 625px;
+    height: 625px;
+    border-radius: 50%;
+    /* background: url(../img/character/narin_bg.png) no-repeat center; */
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.k_body_img {
+    position: absolute;
+    top: 600px;
+    left: 490px;
+}
+
+.kei_talk {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    text-align: center;
+}
+
+.kei_talk p {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    line-height: 63px;
+}
+
+.kei_item1 {
+    position: absolute;
+    top: 440px;
+    right: 140px;
+
+}
+
+.kei_item1 img {
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.kei_item2 {
+    position: absolute;
+    top: 685px;
+    right: 70px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.kei_item3 {
+    position: absolute;
+    top: 960px;
+    right: 140px;
+    animation: item_move 1s linear infinite alternate-reverse;
+}
+
+.kei_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.k_personality {
+    width: 462px;
+    height: 274px;
+    background-color: #e3c7fd;
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.kei_flex h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.mbti {
+    display: flex;
+}
+
+
+
+.mbti_text {
+    padding-left: 25px;
+}
+
+.mbti_bar {
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.mbti_1_body {
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.k_personality .mbti_1_bar {
+    background-color: #ba75f0;
+    width: 70%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .1s;
+}
+
+.mbti_2_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.k_personality .mbti_2_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 80%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .2s;
+}
+
+.mbti_3_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.k_personality .mbti_3_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 35%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .3s;
+}
+
+.mbti_4_body {
+    margin-top: 17px;
+    width: 310px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.k_personality .mbti_4_bar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #ba75f0;
+    width: 25%;
+    height: 22px;
+    border-radius: 11px;
+    z-index: 10;
+    animation: mbti 1.5s linear forwards;
+    animation-delay: .4s;
+}
+
+.k_turn {
+    margin-top: 50px;
+    padding-top: 0px;
+    padding-right: 25px;
+    width: 585px;
+    height: 274px;
+    background: url(../img/character/kei_turn_around.png) no-repeat;
+    text-align: center;
+}
+
+.k_turn h1 {
+    color: #c891ff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    width: 100%;
+    height: 210px;
+    background-color: #5c3b85;
+    position: relative;
+    z-index: 300;
+}
+
+.f_inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.f_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.f_slogan {
+    width: 440px;
+    z-index: 50;
+}
+
+.f_about {
+    width: 440px;
+    z-index: 50;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #b5a2fe;
+    padding-top: 30px;
+}
+
+.f_sns {
+    width: 440px;
+    z-index: 50;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #b5a2fe;
+    padding-top: 20px;
+}
+
+.f_sns p {
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.f_sns ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.f_sns ul li {
+    padding-left: 15px;
+}

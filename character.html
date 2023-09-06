@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>Merhand/Character</title>
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- 더잠실폰트 -->
+    <link href="https://webfontworld.github.io/TheJamsil/TheJamsil.css" rel="stylesheet">
+    <!-- 어그로폰트 -->
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
+    <!-- ajax jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--스와이퍼-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 스크롤 아웃 효과 -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/character.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="h_inner">
+            <div class="h_logo">
+                <h1><a href="#"><img src="./img/brand/logo_1.png" alt=""></a></h1>
+            </div><!--h_logo-->
+            <div class="h_hamberger">
+                <div class="h_btn">
+                    <a href="#"><img src="./img/header/hamberger_btn.png" alt=""></a>
+                </div><!--h_btn-->
+                <div class="h_btn_hover">
+                    <a href="#"><img src="./img/header/hamberger_btn_hover.png" alt=""></a>
+                </div>
+                <!-- h_btn_hover -->
+            </div><!--h_hamberger-->
+            <div class="sidebar_menu">
+                <div class="sidebar_menu_inner">
+                    <div class="sidebar_lnb">
+                        <h1><a href="#"><img src="./img/header/side_menu_logo.png" alt=""></a></h1>
+                        <p>
+                            <span class="sidebar_lnb_p_style">Tel</span> : 010-9908-7612 <br>
+                            <span class="sidebar_lnb_p_style">E-mail</span> : sje00328@naver.com <br>
+                            <span class="sidebar_lnb_p_style">Add</span> : 부산광역시 중구 중앙대로 26
+                        </p>
+                    </div>
+
+                    <div class="sidebar_rnb">
+                        <div class="x_btn">
+                            <div class="close_btn">
+                                <a href="#">
+                                    <img src="./img/header/x_icon.png" alt="x아이콘">
+                                </a>
+                            </div><!--close_btn-->
+                        </div><!--x_btn-->
+                        <div class="sidebar_ul">
+                            <ul class="about_menu">
+                                <li>
+                                    <a href="#">About us</a>
+                                    <ul class="about_menu_inner">
+                                        <li><a href="#">Brand</a></li>
+                                        <li><a href="#">Character</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="shop_menu">
+                                <li>
+                                    <a href="#">Shop</a>
+                                    <ul class="shop_menu_inner">
+                                        <li><a href="#">Stationery</a></li>
+                                        <li><a href="#">Acc</a></li>
+                                        <li><a href="#">Living</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="community_menu">
+                                <li>
+                                    <a href="#">Community</a>
+                                    <ul class="shop_menu_inner">
+                                        <li><a href="#">Notice</a></li>
+                                        <li><a href="#">F&Q</a></li>
+                                        <li><a href="#">Review</a></li>
+                                        <li><a href="#">Event</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--sidebar_ul-->
+                    </div><!--sidebar_rnb-->
+                </div><!--sidebar_menu_inner-->
+            </div><!--sidebar_menu-->
+        </div><!--h_inner-->
+    </div><!--header-->
+    <div id="banner">
+        <div class="banner_img">
+            <!-- <img src="./img/character/character_banner.png" alt=""> -->
+            <div class="banner_text">
+                <p><span>F</span><span>A</span><span>R</span><span>I</span><span>E</span><span>S</span>
+                </p>
+                <!-- <span>F</span>
+                <span>A</span>
+                <span>I</span>
+                <span>R</span>
+                <span>I</span>
+                <span>E</span>
+                <span>S</span> -->
+            </div>
+        </div>
+        <div class="cloud">
+            <div class="cloud1">
+                <img src="./img/character/banner_cloud1.png" alt="">
+            </div>
+            <div class="cloud1_1">
+                <img src="./img/character/banner_cloud1_1.png" alt="">
+            </div>
+            <div class="cloud2">
+                <img src="./img/character/banner_cloud2.png" alt="">
+            </div>
+            <div class="cloud2_1">
+                <img src="./img/character/banner_cloud2_2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="fairies_about" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-delay="300">
+        <h1>페어리즈</h1>
+        <div class="faireies_flex">
+            <div class="poron_box">
+                <img src="./img/character/poron_face.png" alt="">
+            </div>
+            <div class="ate_box">
+                <img src="./img/character/ate_face.png" alt="">
+            </div>
+            <div class="narin_box">
+                <img src="./img/character/narin_face.png" alt="">
+            </div>
+            <div class="tero_box">
+                <img src="./img/character/tero_face.png" alt="">
+            </div>
+            <div class="kei_box">
+                <img src="./img/character/kei_face.png" alt="">
+            </div>
+        </div><!--faireies_flex-->
+        <p>
+            메르핸드에는 생기발랄한 수험생 나린과 사고뭉치 포론,<br>
+            소심한 테로, 장난꾸리기 아테, 잠만보 케이가 살고있습니다.<br>
+            이들은 메르핸드에 살며 새로운 만남을 기다리고 있습니다.
+        </p>
+    </div>
+    <div class="c_background">
+        <div class="narin_b_inner">
+            <h1>NARIN_ABOUT</h1>
+            <h3>To the land of dreams, Merhand</h3>
+            <div id="narin_about">
+                <div class="narin_mark">
+                    <p><img src="./img/character/narin_mark.png" alt=""></p>
+                </div>
+                <div class="narin_header">
+                </div>
+                <div class="narin_inner">
+                    <div class="narin_container">
+                        <div class="narin_ticket">
+                            <div class="narin_text">
+                                <div class="narin_imgbox">
+                                    <div class="narin_img">
+                                        <!-- <img src="./img/character/narin_ticket_img.png" alt=""> -->
+                                        <!-- <img src="./img/character/narin_ticket_img2.png" alt=""> -->
+                                    </div>
+                                </div>
+                                <div class="narin_ticket_text">
+                                    <div class="n_text_border">
+                                        <h3>&nbsp;&nbsp;NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나린</h3>
+                                    </div>
+                                    <div class="n_text_border">
+                                        <h3>&nbsp;&nbsp;AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19
+                                        </h3>
+                                    </div>
+                                    <div class="n_text_border">
+                                        <h3>&nbsp;&nbsp;MBTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENFP</h3>
+                                    </div>
+                                    <p>
+                                        고된 수험생활로 어린시절을 그리워하며, <br>
+                                        어릴적부터 동화책과 만화를 좋아합니다.<br>
+                                        잠시 숨을 돌리고자 산에서 책을 읽고 있을때<br>
+                                        산속에 작은 문을 발견해 열어보니<br>
+                                        메르핸드에 오게되었습니다.
+                                    </p>
+                                </div>
+                            </div><!--nairn_text-->
+                            <div class="narin_barcode">
+                                <h1>TICKET</h1>
+                                <div class="n_b_text">
+                                    <h3>MERHAND</h3>
+                                    <p>-NARIN-</p>
+                                </div>
+                                <p class="barcode_date">2005/07/07</p>
+                            </div><!--narin_barcode-->
+                        </div><!--narin_ticket-->
+                        <div class="narin_circle">
+                            <div class="narin_circle_img">
+                                <img src="./img/character/narin_circle_text.png" alt="">
+                            </div>
+                        </div><!--narin_circle-->
+                        <div class="narin_face_mark">
+                            <img src="./img/character/narin_face_mark.png" alt="">
+                        </div>
+                    </div><!--narin_container-->
+                    <div class="n_t_move">
+                        <div class="n_t_inner">
+                            <p>◆ NARIN ◆ NARIN ◆ NARIN ◆ NARIN ◆ NARIN ◆ NARIN ◆ NARIN ◆ NARIN ◆</p>
+                            <!-- <p> NARIN ◆ NARIN ◆ NARIN ◆</p> -->
+                        </div>
+                    </div>
+                    <div class="narin_about_img">
+                        <div class="narin_body">
+                            <div class="narin_bg">
+                                <img src="./img/character/narin_bg.png" alt="">
+                                <div class="n_body_img">
+                                    <img src="./img/character/narin_body.png" alt="">
+                                </div>
+                                <div class="narin_talk">
+                                    <p>
+                                        Let’s <br>
+                                        Hang<br>
+                                        Out!</p>
+                                    <img src="./img/character/narin_talk.png" alt="">
+                                </div>
+                            </div>
+                            <div class="narin_item1">
+                                <img src="./img/character/narin_item1.png" alt="나비">
+                            </div>
+                            <div class="narin_item2">
+                                <img src="./img/character/narin_item2.png" alt="체리">
+                            </div>
+                            <div class="narin_item3">
+                                <img src="./img/character/narin_item3.png" alt="책">
+                            </div>
+                        </div>
+                        <div class="narin_flex">
+                            <div class="n_personality">
+                                <h3>PERSONALITY</h3>
+                                <div class="mbti">
+                                    <div class="mbti_text">
+                                        <p>내성적</p>
+                                        <p>감각적</p>
+                                        <p>사고적</p>
+                                        <p>판단적</p>
+                                    </div>
+                                    <div class="mbti_bar">
+                                        <div class="mbti_1_body">
+                                            <div class="mbti_1_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_2_body">
+                                            <div class="mbti_2_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_3_body">
+                                            <div class="mbti_3_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_4_body">
+                                            <div class="mbti_4_bar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n_turn">
+                                <h1>TURN AROUND</h1>
+                                <!-- <img src="./img/character/narin_turn_around.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--narin_inner-->
+            </div><!--narin_about-->
+        </div><!--narin_b_inner-->
+    </div><!--c_background-->
+
+    <div class="poron_background">
+        <div class="poron_b_inner">
+            <h1>PORON_ABOUT</h1>
+            <h3>To the land of dreams, Merhand</h3>
+            <div id="poron_about">
+                <div class="poron_mark">
+                    <p><img src="./img/character/poron_mark.png" alt=""></p>
+                </div>
+                <div class="poron_header">
+                </div>
+                <div class="poron_inner">
+                    <div class="poron_container">
+                        <div class="poron_circle">
+                            <div class="poron_circle_img">
+                                <img src="./img/character/poron_circle_text.png" alt="">
+                            </div>
+                        </div><!--narin_circle-->
+                        <div class="poron_face_mark">
+                            <img src="./img/character/poron_face_mark.png" alt="">
+                        </div>
+                        <div class="poron_ticket">
+                            <div class="poron_barcode">
+                                <h1>TICKET</h1>
+                                <div class="p_b_text">
+                                    <h3>MERHAND</h3>
+                                    <p>-PORON-</p>
+                                </div>
+                                <p class="barcode_date">1774/05/20</p>
+                            </div><!--narin_barcode-->
+                            <div class="poron_text">
+                                <div class="poron_ticket_text">
+                                    <div class="p_text_border">
+                                        <h3>&nbsp;&nbsp;NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;포론</h3>
+                                    </div>
+                                    <div class="p_text_border">
+                                        <h3>&nbsp;&nbsp;AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;250
+                                        </h3>
+                                    </div>
+                                    <div class="p_text_border">
+                                        <h3>&nbsp;&nbsp;MBTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENFJ</h3>
+                                    </div>
+                                    <p>
+                                        나린과 처음 만난 달토끼 요정. <br>
+                                        사람을 좋아하며 친화적이며<br>
+                                        여행을 즐깁니다.<br>
+                                        계획 세우는 걸 좋아합니다.
+                                    </p>
+                                </div><!--poron_ticket_text 포론 티켓 텍스트-->
+                                <div class="poron_imgbox">
+                                    <div class="poron_img">
+                                        <!-- 티켓 포론 프로필 사진이 배경으로들어감 -->
+                                    </div><!--poron_img-->
+                                </div><!--poron_imgbox-->
+
+                            </div><!--poron_text-->
+
+                        </div><!--narin_ticket-->
+
+                    </div><!--narin_container-->
+                    <div class="p_t_move">
+                        <div class="p_t_inner">
+                            <p>◆ PORON ◆ PORON ◆ PORON ◆ PORON ◆ PORON ◆ PORON ◆ PORON ◆ PORON ◆</p>
+                            <!-- <p> NARIN ◆ NARIN ◆ NARIN ◆</p> -->
+                        </div>
+                    </div>
+                    <div class="poron_about_img">
+                        <div class="poron_body">
+                            <div class="poron_bg">
+                                <div class="poron_item1">
+                                    <img src="./img/character/poron_item1.png" alt="나비">
+                                </div>
+                                <div class="poron_item2">
+                                    <img src="./img/character/poron_item2.png" alt="체리">
+                                </div>
+                                <div class="poron_item3">
+                                    <img src="./img/character/poron_item3.png" alt="책">
+                                </div>
+                                <img src="./img/character/poron_bg.png" alt="">
+                                <div class="p_body_img">
+                                    <img src="./img/character/poron_body.png" alt="">
+                                </div>
+                                <div class="poron_talk">
+                                    <p>
+                                        Let’s <br>
+                                        Hang<br>
+                                        Out!</p>
+                                    <img src="./img/character/poron_talk.png" alt="">
+                                </div>
+                            </div><!--poron_bg-->
+
+                        </div><!--poron_body-->
+                        <div class="poron_flex">
+                            <div class="p_turn">
+                                <h1>TURN AROUND</h1>
+                                <!-- <img src="./img/character/narin_turn_around.png" alt=""> -->
+                            </div>
+                            <div class="p_personality">
+                                <h3>PERSONALITY</h3>
+                                <div class="mbti">
+                                    <div class="mbti_bar">
+                                        <div class="mbti_1_body">
+                                            <div class="mbti_1_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_2_body">
+                                            <div class="mbti_2_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_3_body">
+                                            <div class="mbti_3_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_4_body">
+                                            <div class="mbti_4_bar">
+                                            </div>
+                                        </div>
+                                    </div><!--mbti_bar-->
+                                    <div class="mbti_text">
+                                        <p>내성적</p>
+                                        <p>감각적</p>
+                                        <p>사고적</p>
+                                        <p>판단적</p>
+                                    </div>
+
+                                </div><!--mbti-->
+                            </div><!--p_personality-->
+
+                        </div><!--poron_flex-->
+                    </div><!--poron_about_img-->
+                </div><!--poron_inner-->
+            </div><!--poron_about-->
+        </div><!--poron_b_inner-->
+    </div><!--poron_background-->
+
+    <!-- tero -->
+    <div class="tero_background">
+        <div class="tero_b_inner">
+            <h1>TERO_ABOUT</h1>
+            <h3>To the land of dreams, Merhand</h3>
+            <div id="tero_about">
+                <div class="tero_mark">
+                    <p><img src="./img/character/tero_mark.png" alt=""></p>
+                </div>
+                <div class="tero_header">
+                </div>
+                <div class="tero_inner">
+                    <div class="tero_container">
+                        <div class="tero_ticket">
+                            <div class="tero_text">
+                                <div class="tero_imgbox">
+                                    <div class="tero_img">
+                                    </div>
+                                </div>
+                                <div class="tero_ticket_text">
+                                    <div class="t_text_border">
+                                        <h3>&nbsp;&nbsp;NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;테로</h3>
+                                    </div>
+                                    <div class="t_text_border">
+                                        <h3>&nbsp;&nbsp;AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300
+                                        </h3>
+                                    </div>
+                                    <div class="t_text_border">
+                                        <h3>&nbsp;&nbsp;MBTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INFJ</h3>
+                                    </div>
+                                    <p>
+                                        겁이 많고 소심한 성격이지만 친해지면 <br>
+                                        활발해집니다.<br>
+                                        첫만남에 너무 가까이 접근을 하면 도망가니<br>
+                                        주의가 필요합니다.
+                                    </p>
+                                </div>
+                            </div><!--nairn_text-->
+                            <div class="tero_barcode">
+                                <h1>TICKET</h1>
+                                <div class="t_b_text">
+                                    <h3>MERHAND</h3>
+                                    <p>-TERO-</p>
+                                </div>
+                                <p class="barcode_date">1724/08/29</p>
+                            </div><!--narin_barcode-->
+                        </div><!--narin_ticket-->
+                        <div class="tero_circle">
+                            <div class="tero_circle_img">
+                                <img src="./img/character/tero_circle_text.png" alt="">
+                            </div>
+                        </div><!--narin_circle-->
+                        <div class="tero_face_mark">
+                            <img src="./img/character/tero_face_mark.png" alt="">
+                        </div>
+                    </div><!--narin_container-->
+                    <div class="t_t_move">
+                        <div class="t_t_inner">
+                            <p>◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆ TERO ◆</p>
+                            <!-- <p> NARIN ◆ NARIN ◆ NARIN ◆</p> -->
+                        </div>
+                    </div>
+                    <div class="tero_about_img">
+                        <div class="tero_body">
+                            <div class="tero_bg">
+                                <img src="./img/character/tero_bg.png" alt="">
+                                <div class="t_body_img">
+                                    <img src="./img/character/tero_body.png" alt="">
+                                </div>
+                                <div class="tero_talk">
+                                    <p>
+                                        Let’s <br>
+                                        Hang<br>
+                                        Out!</p>
+                                    <img src="./img/character/tero_talk.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tero_item1">
+                                <img src="./img/character/tero_item1.png" alt="나비">
+                            </div>
+                            <div class="tero_item2">
+                                <img src="./img/character/tero_item2.png" alt="체리">
+                            </div>
+                            <div class="tero_item3">
+                                <img src="./img/character/tero_item3.png" alt="책">
+                            </div>
+                        </div>
+                        <div class="tero_flex">
+                            <div class="t_personality">
+                                <h3>PERSONALITY</h3>
+                                <div class="mbti">
+                                    <div class="mbti_text">
+                                        <p>내성적</p>
+                                        <p>감각적</p>
+                                        <p>사고적</p>
+                                        <p>판단적</p>
+                                    </div>
+                                    <div class="mbti_bar">
+                                        <div class="mbti_1_body">
+                                            <div class="mbti_1_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_2_body">
+                                            <div class="mbti_2_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_3_body">
+                                            <div class="mbti_3_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_4_body">
+                                            <div class="mbti_4_bar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t_turn">
+                                <h1>TURN AROUND</h1>
+                                <!-- <img src="./img/character/narin_turn_around.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--narin_inner-->
+            </div><!--narin_about-->
+        </div><!--narin_b_inner-->
+    </div><!--c_background-->
+
+    <div class="ate_background">
+        <div class="ate_b_inner">
+            <h1>ATE_ABOUT</h1>
+            <h3>To the land of dreams, Merhand</h3>
+            <div id="ate_about">
+                <div class="ate_mark">
+                    <p><img src="./img/character/ate_mark.png" alt=""></p>
+                </div>
+                <div class="ate_header">
+                </div>
+                <div class="ate_inner">
+                    <div class="ate_container">
+                        <div class="ate_circle">
+                            <div class="ate_circle_img">
+                                <img src="./img/character/ate_circle_text.png" alt="">
+                            </div>
+                        </div><!--narin_circle-->
+                        <div class="ate_face_mark">
+                            <img src="./img/character/ate_face_mark.png" alt="">
+                        </div>
+                        <div class="ate_ticket">
+                            <div class="ate_barcode">
+                                <h1>TICKET</h1>
+                                <div class="a_b_text">
+                                    <h3>MERHAND</h3>
+                                    <p>-ATE-</p>
+                                </div>
+                                <p class="barcode_date">1754/03/15</p>
+                            </div><!--narin_barcode-->
+                            <div class="ate_text">
+                                <div class="ate_ticket_text">
+                                    <div class="a_text_border">
+                                        <h3>&nbsp;&nbsp;NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아테</h3>
+                                    </div>
+                                    <div class="a_text_border">
+                                        <h3>&nbsp;&nbsp;AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;270
+                                        </h3>
+                                    </div>
+                                    <div class="a_text_border">
+                                        <h3>&nbsp;&nbsp;MBTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTP</h3>
+                                    </div>
+                                    <p>
+                                        사람들을 놀리는 것을 좋아하는 <br>
+                                        짓궂은 성격의 장난 꾸러기.<br>
+                                        발랄하고 외향적인 성격이며<br>
+                                        노는 것을 좋아합니다.
+                                    </p>
+                                </div><!--ate_ticket_text 포론 티켓 텍스트-->
+                                <div class="ate_imgbox">
+                                    <div class="ate_img">
+                                        <!-- 티켓 포론 프로필 사진이 배경으로들어감 -->
+                                    </div><!--poron_img-->
+                                </div><!--poron_imgbox-->
+
+                            </div><!--ate_text-->
+
+                        </div><!--ate_ticket-->
+
+                    </div><!--narin_container-->
+                    <div class="a_t_move">
+                        <div class="a_t_inner">
+                            <p>◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆ ATE ◆</p>
+                            <!-- <p> NARIN ◆ NARIN ◆ NARIN ◆</p> -->
+                        </div>
+                    </div>
+                    <div class="ate_about_img">
+                        <div class="ate_body">
+                            <div class="ate_bg">
+                                <div class="ate_item1">
+                                    <img src="./img/character/ate_item1.png" alt="나비">
+                                </div>
+                                <div class="ate_item2">
+                                    <img src="./img/character/ate_item2.png" alt="체리">
+                                </div>
+                                <div class="ate_item3">
+                                    <img src="./img/character/ate_item3.png" alt="책">
+                                </div>
+                                <img src="./img/character/ate_bg.png" alt="">
+                                <div class="a_body_img">
+                                    <img src="./img/character/ate_body.png" alt="">
+                                </div>
+                                <div class="ate_talk">
+                                    <p>
+                                        Let’s <br>
+                                        Hang<br>
+                                        Out!</p>
+                                    <img src="./img/character/ate_talk.png" alt="">
+                                </div>
+                            </div><!--poron_bg-->
+
+                        </div><!--poron_body-->
+                        <div class="ate_flex">
+                            <div class="a_turn">
+                                <h1>TURN AROUND</h1>
+                                <!-- <img src="./img/character/narin_turn_around.png" alt=""> -->
+                            </div>
+                            <div class="a_personality">
+                                <h3>PERSONALITY</h3>
+                                <div class="mbti">
+                                    <div class="mbti_bar">
+                                        <div class="mbti_1_body">
+                                            <div class="mbti_1_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_2_body">
+                                            <div class="mbti_2_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_3_body">
+                                            <div class="mbti_3_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_4_body">
+                                            <div class="mbti_4_bar">
+                                            </div>
+                                        </div>
+                                    </div><!--mbti_bar-->
+                                    <div class="mbti_text">
+                                        <p>내성적</p>
+                                        <p>감각적</p>
+                                        <p>사고적</p>
+                                        <p>판단적</p>
+                                    </div>
+
+                                </div><!--mbti-->
+                            </div><!--a_personality-->
+
+                        </div><!--poron_flex-->
+                    </div><!--poron_about_img-->
+                </div><!--poron_inner-->
+            </div><!--poron_about-->
+        </div><!--poron_b_inner-->
+    </div><!--poron_background-->
+    <div class="kei_background">
+        <div class="kei_b_inner">
+            <h1>KEI_ABOUT</h1>
+            <h3>To the land of dreams, Merhand</h3>
+            <div id="kei_about">
+                <div class="kei_mark">
+                    <p><img src="./img/character/kei_mark.png" alt=""></p>
+                </div>
+                <div class="kei_header">
+                </div>
+                <div class="kei_inner">
+                    <div class="kei_container">
+                        <div class="kei_ticket">
+                            <div class="kei_text">
+                                <div class="kei_imgbox">
+                                    <div class="kei_img">
+                                    </div>
+                                </div>
+                                <div class="kei_ticket_text">
+                                    <div class="k_text_border">
+                                        <h3>&nbsp;&nbsp;NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;케이</h3>
+                                    </div>
+                                    <div class="k_text_border">
+                                        <h3>&nbsp;&nbsp;AGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;350
+                                        </h3>
+                                    </div>
+                                    <div class="k_text_border">
+                                        <h3>&nbsp;&nbsp;MBTI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISFP</h3>
+                                    </div>
+                                    <p>
+                                        하루에 15시간을 자는 잠꾸러기. <br>
+                                        침대에 누워있는 걸 제일 좋아합니다.<br>
+                                        요정들중 가장 오래산 요정이며<br>
+                                        눈떠있는 것을 보기 힘듭니다.
+
+                                    </p>
+                                </div>
+                            </div><!--nairn_text-->
+                            <div class="kei_barcode">
+                                <h1>TICKET</h1>
+                                <div class="k_b_text">
+                                    <h3>MERHAND</h3>
+                                    <p>-KEI-</p>
+                                </div>
+                                <p class="barcode_date">1674/12/25</p>
+                            </div><!--narin_barcode-->
+                        </div><!--narin_ticket-->
+                        <div class="kei_circle">
+                            <div class="kei_circle_img">
+                                <img src="./img/character/kei_circle_text.png" alt="">
+                            </div>
+                        </div><!--narin_circle-->
+                        <div class="kei_face_mark">
+                            <img src="./img/character/kei_face_mark.png" alt="">
+                        </div>
+                    </div><!--narin_container-->
+                    <div class="k_t_move">
+                        <div class="k_t_inner">
+                            <p>◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆ KEI ◆</p>
+                        </div>
+                    </div>
+                    <div class="kei_about_img">
+                        <div class="kei_body">
+                            <div class="kei_bg">
+                                <img src="./img/character/kei_bg.png" alt="">
+                                <div class="k_body_img">
+                                    <img src="./img/character/kei_body.png" alt="">
+                                </div>
+                                <div class="kei_talk">
+                                    <p>
+                                        Let’s <br>
+                                        Hang<br>
+                                        Out!</p>
+                                    <img src="./img/character/kei_talk.png" alt="">
+                                </div>
+                            </div>
+                            <div class="kei_item1">
+                                <img src="./img/character/kei_item1.png" alt="나비">
+                            </div>
+                            <div class="kei_item2">
+                                <img src="./img/character/kei_item2.png" alt="체리">
+                            </div>
+                            <div class="kei_item3">
+                                <img src="./img/character/kei_item3.png" alt="책">
+                            </div>
+                        </div>
+                        <div class="kei_flex">
+                            <div class="k_personality">
+                                <h3>PERSONALITY</h3>
+                                <div class="mbti">
+                                    <div class="mbti_text">
+                                        <p>내성적</p>
+                                        <p>감각적</p>
+                                        <p>사고적</p>
+                                        <p>판단적</p>
+                                    </div>
+                                    <div class="mbti_bar">
+                                        <div class="mbti_1_body">
+                                            <div class="mbti_1_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_2_body">
+                                            <div class="mbti_2_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_3_body">
+                                            <div class="mbti_3_bar">
+                                            </div>
+                                        </div>
+                                        <div class="mbti_4_body">
+                                            <div class="mbti_4_bar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k_turn">
+                                <h1>TURN AROUND</h1>
+                                <!-- <img src="./img/character/narin_turn_around.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--narin_inner-->
+            </div><!--narin_about-->
+        </div><!--narin_b_inner-->
+    </div><!--c_background-->
+
+    <div class="footer">
+        <div class="f_inner">
+            <div class="f_content">
+                <div class="f_slogan">
+                    <h1><img src="./img/footer_img/footer_slogan.png" alt=""></h1>
+                </div>
+                <div class="f_about">
+                    <p>
+                        Add : 부산광역시 중구 중앙대로 26<br>
+                        Tel : 010-9908-7612<br>
+                        Name : 신정은<br>
+                        E-mail : sje00328@naver.com
+                    </p>
+                </div>
+                <div class="f_sns">
+                    <p>SNS</p>
+                    <ul>
+                        <li><a href="https://www.naver.com/" target="_blank"><img src="./img/footer_img/naver_logo.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img
+                                    src="./img/footer_img/instar_logo.png" alt=""></a></li>
+                        <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank"><img
+                                    src="./img/footer_img/kakao_logo.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--footer-->
+    <script>
+        // aos 스크롤 효과 사용
+        AOS.init();
+
+        // const element = document.querySelector('#fairies_about');
+        // const scrollTarget = window;
+        // const animationName = 'face_move';
+        // const start = 0;
+        // const end = () => document.documentElement.scrollHeight - document.documentElement.offsetHeight;
+
+        // const animation = new ScrollAnimation(element, scrollTarget, animation, start, end);
+
+        // ScrollOut({
+        //     onShown: function (element, ctx, scrollingElement) {
+        //         /* Triggered when an element is shown */
+        //     },
+        //     onHidden: function (element, ctx, scrollingElement) {
+        //         /* Triggered when an element is hidden */
+        //     },
+        //     onChange: function (element, ctx, scrollingElement) {
+        //         /* Triggered when an element changes visibility */
+        //     }
+        // });
+        // ScrollOut({});
+
+        // (function ($) {
+        //     "use strict";
+        //     $(function () {
+        //         function animated_contents() {
+        //             $(".zt-skill-bar > div ").each(function (i) {
+        //                 var $this = $(this),
+        //                     skills = $this.data('width');
+
+        //                 $this.css({ 'width': skills + '%' });
+
+        //             });
+        //         }
+
+        //         if (jQuery().appear) {
+        //             $('.zt-skill-bar').appear().on('appear', function () {
+        //                 animated_contents();
+        //             });
+        //         } else {
+        //             animated_contents();
+        //         }
+        //     });
+        // }(jQuery));
+
+        // 햄버거 버튼 슬라이드
+        $(document).ready(function () {
+            $('.h_btn_hover>a').on('click', function () {
+                $('.sidebar_menu').show().animate({
+                    right: 0
+                });
+            });
+            $('.close_btn>a').on('click', function () {
+                $('.sidebar_menu').animate({
+                    right: '-' + 100 + '%'
+                }, function () {
+                    $('.sidebar_menu').hide();
+                });
+            });
+
+        });
+
+
+
+
+        // 햄버거 버튼 슬라이드
+        function show() {
+            document.querySelector(".background").className = "background show";
+        }
+
+        function close() {
+            document.querySelector(".background").className = "background";
+        }
+        document.querySelector("#show").addEventListener('click', show);
+        document.querySelector("#letter_close").addEventListener('click', close);
+    </script>
+</body>
+
+</html>

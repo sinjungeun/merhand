@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>Merhand/Shop</title>
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- 더잠실폰트 -->
+    <link href="https://webfontworld.github.io/TheJamsil/TheJamsil.css" rel="stylesheet">
+    <!-- 어그로폰트 -->
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
+    <!-- ajax jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--스와이퍼-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="h_inner">
+            <div class="h_logo">
+                <h1><a href="#"><img src="./img/brand/logo_1.png" alt=""></a></h1>
+            </div><!--h_logo-->
+            <div class="h_hamberger">
+                <div class="h_btn">
+                    <a href="#"><img src="./img/header/hamberger_btn.png" alt=""></a>
+                </div><!--h_btn-->
+                <div class="h_btn_hover">
+                    <a href="#"><img src="./img/header/hamberger_btn_hover.png" alt=""></a>
+                </div>
+                <!-- h_btn_hover -->
+            </div><!--h_hamberger-->
+            <div class="sidebar_menu">
+                <div class="sidebar_menu_inner">
+                    <div class="sidebar_lnb">
+                        <h1><a href="#"><img src="./img/header/side_menu_logo.png" alt=""></a></h1>
+                        <p>
+                            <span class="sidebar_lnb_p_style">Tel</span> : 010-9908-7612 <br>
+                            <span class="sidebar_lnb_p_style">E-mail</span> : sje00328@naver.com <br>
+                            <span class="sidebar_lnb_p_style">Add</span> : 부산광역시 중구 중앙대로 26
+                        </p>
+                    </div>
+
+                    <div class="sidebar_rnb">
+                        <div class="x_btn">
+                            <div class="close_btn">
+                                <a href="#">
+                                    <img src="./img/header/x_icon.png" alt="x아이콘">
+                                </a>
+                            </div><!--close_btn-->
+                        </div><!--x_btn-->
+                        <div class="sidebar_ul">
+                            <ul class="about_menu">
+                                <li>
+                                    <a href="#">About us</a>
+                                    <ul class="about_menu_inner">
+                                        <li><a href="./brand.html">Brand</a></li>
+                                        <li><a href="./character.html">Character</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="shop_menu">
+                                <li>
+                                    <a href="#">Shop</a>
+                                    <ul class="shop_menu_inner">
+                                        <li><a href="./shop.html">Stationery</a></li>
+                                        <li><a href="./shop.html">Acc</a></li>
+                                        <li><a href="./shop.html">Living</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="community_menu">
+                                <li>
+                                    <a href="#">Community</a>
+                                    <ul class="shop_menu_inner">
+                                        <li><a href="./community.html#notice">Notice</a></li>
+                                        <li><a href="./community.html#faq">F&Q</a></li>
+                                        <li><a href="./community.html#review">Review</a></li>
+                                        <li><a href="./community.html#event">Event</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--sidebar_ul-->
+                    </div><!--sidebar_rnb-->
+                </div><!--sidebar_menu_inner-->
+            </div><!--sidebar_menu-->
+        </div><!--h_inner-->
+    </div><!--header-->
+
+    <div id="shop_main">
+        <div class="shop_banner">
+            <img src="./img/shop/stationery_banner3.png" alt="문구류 배너">
+        </div>
+        <div class="shop_rnb">
+            <div class="shop_best">
+                <div class="shop_roof">
+                    <!-- <img src="./img/shop/roof.png" alt=""> -->
+                    <div class="ul_inner">
+                        <h1>SHOP</h1>
+                        <ul>
+                            <li class="stationery"><a href="#">Stationery</a></li>
+                            <li class="acc"><a href="#">Acc</a></li>
+                            <li class="living"><a href="#">Living</a></li>
+                        </ul>
+                    </div>
+                </div><!--shop_roof-->
+                <div id="shop_slide">
+                    <!--마진오토-->
+                    <h1>BEST ITEM</h1>
+                    <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                        <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                            <div class="swiper-slide">
+                                <!--swiper-slide는 필수 클래스-->
+                                <a href="#">
+                                    <div class="img_box ate_keyring">
+                                        <img src="./img/shop/ate_keyring.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Ate_Keyring</p>
+                                        </div>
+                                    </div>
+                                    <div class="keyword">
+                                        <p>#BEST<br>#KEYRING<br>#ATE</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 3000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./img/shop/calendar.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Calendar</p>
+                                        </div>
+                                    </div>
+                                    <div class="keyword">
+                                        <p>#BEST<br>#CALENDAR<br>#ALL</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 4500</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./img/shop/kei_note.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Kei_Note</p>
+                                        </div>
+                                    </div>
+                                    <div class="keyword">
+                                        <p>#BEST<br>#NOTE<br>#KEI</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 3000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img_box ate_memo">
+                                        <img src="./img/shop/ate_memo.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Ate_Memo</p>
+                                        </div>
+                                    </div>
+                                    <div class="keyword">
+                                        <p>#BEST<br>#MEMO<br>#ATE</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 2500</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img_box tero_tape">
+                                        <img src="./img/shop/tero_tape.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Tero_Tape</p>
+                                        </div>
+                                    </div><!--img_box-->
+                                    <div class="keyword">
+                                        <p>#BEST<br>#MASKING_TAPE<br>#TERO</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 3000</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./img/shop/ate_bag.png" alt="">
+                                    </div>
+                                    <div class="text_box">
+                                        <img src="./img/shop/text_box.png" alt="">
+                                        <div class="text_box_inner">
+                                            <p>Ate_Bag</p>
+                                        </div>
+                                    </div><!--img_box-->
+                                    <div class="keyword">
+                                        <p>#BEST<br>#BAG<br>#ATE</p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="cart_icon">
+                                            <img src="./img/shop/cart_icon.png" alt="">
+                                        </div>
+                                        <div class="heart_icon">
+                                            <img src="./img/shop/heart_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p>₩ 2000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--도트를 추가하고 싶을때-->
+                        <div class="swiper-pagination"></div>
+                    </div><!--mb E-->
+                    <!--화살표추가-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div><!--news-->
+            </div><!--shop_best-->
+            <div class="product">
+                <div class="product_boxs">
+                    <div class="best_crown">
+                        <img src="./img/shop/best_icon.png" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/kei_note.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Kei_Note</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#BEST<br>#NOTE<br>#KEI</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 3000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/ate_note.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Ate_Note</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#NOTE<br>#ATE</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 3000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/narin_note.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Narin_Note</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#PRETTY<br>#NOTE<br>#NARIN</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 3000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/poron_note.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Poron_Note</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#NOTE<br>#PORON</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 3000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/tero_note.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Tero_Note</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#PRETTY<br>#NOTE<br>#TERO</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 3000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <div class="best_crown">
+                        <img src="./img/shop/best_icon.png" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="product_box memo2">
+                            <img src="./img/shop/ate_memo.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Ate_Memo</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#BEST<br>#MEMO<br>#ATE</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box memo2">
+                            <img src="./img/shop/tero_memo.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Tero_Memo</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MEMO<br>#TERO</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box memo2">
+                            <img src="./img/shop/kei_memo.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Kei_Memo</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MEMO<br>#KEI</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box memo2">
+                            <img src="./img/shop/narin_memo.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Narin_Memo</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#PRETTY<br>#MEMO<br>#NARIN</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box memo2">
+                            <img src="./img/shop/poron_memo.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Poron_Memo</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MEMO<br>#PORON</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="best_crown">
+                            <img src="./img/shop/best_icon.png" alt="">
+                        </div>
+                        <div class="product_box">
+                            <img src="./img/shop/calendar.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Calendar</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#BEST<br>#CALENDAR<br>#ALL</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 4000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+
+                        <div class="product_box tape">
+                            <img src="./img/shop/kei_tape.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Kei_Masking_Tape</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MASKING_TAPE<br>#KEI</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="best_crown">
+                            <img src="./img/shop/best_icon.png" alt="">
+                        </div>
+                        <div class="product_box  tape">
+                            <img src="./img/shop/tero_tape.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Tero_Masking_Tape</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#BEST<br>#MASKING_TAPE<br>#TERO</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box  tape">
+                            <img src="./img/shop/poron_tape.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Poron_Masking_Tape</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MASKING_TAPE<br>#PORON</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box  tape">
+                            <img src="./img/shop/ate_tape.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Ate_Masking_Tape</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MASKING_TAPE<br>#ATE</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box  tape">
+                            <img src="./img/shop/narin_tape.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Narin_Tape</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#MASKING_TAPE<br>#NARIN</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2500</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/poron_bag.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Poron_Bag</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#BAG<br>#PORON</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/tero_bag.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Tero_Bag</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#BAG<br>#TERO</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+            <div class="product">
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/narin_bag.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Narin_Bag</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#BAG<br>#NARIN</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+
+                <div class="product_boxs">
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/kei_bag.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Kei_Bag</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#CUTE<br>#BAG<br>#KEI</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+                <div class="product_boxs">
+                    <div class="best_crown">
+                        <img src="./img/shop/best_icon.png" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="product_box">
+                            <img src="./img/shop/Ate_bag.png" alt="">
+                        </div>
+                        <div class="porduct_text">
+                            <img src="./img/shop/text_box.png" alt="">
+                            <div class="product_box_inner">
+                                <p>Ate_Bag</p>
+                            </div>
+                        </div>
+                        <div class="product_keyword">
+                            <p>#BEST<br>#BAG<br>#ATE</p>
+                        </div>
+                        <div class="product_icon">
+                            <div class="product_cart_icon">
+                                <img src="./img/shop/cart_icon.png" alt="">
+                            </div>
+                            <div class="product_heart_icon">
+                                <img src="./img/shop/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="product_price">
+                            <p>₩ 2000</p>
+                        </div>
+                    </a>
+                </div><!--porduct_boxs-->
+            </div><!--product-->
+        </div><!--shop_rnb-->
+    </div><!--shop_rnb-->
+
+
+
+    <div class="footer">
+        <div class="f_inner">
+            <div class="f_content">
+                <div class="f_slogan">
+                    <h1><img src="./img/footer_img/footer_slogan.png" alt=""></h1>
+                </div>
+                <div class="f_about">
+                    <p>
+                        Add : 부산광역시 중구 중앙대로 26<br>
+                        Tel : 010-9908-7612<br>
+                        Name : 신정은<br>
+                        E-mail : sje00328@naver.com
+                    </p>
+                </div>
+                <div class="f_sns">
+                    <p>SNS</p>
+                    <ul>
+                        <li><a href="https://www.naver.com/" target="_blank"><img src="./img/footer_img/naver_logo.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img
+                                    src="./img/footer_img/instar_logo.png" alt=""></a></li>
+                        <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank"><img
+                                    src="./img/footer_img/kakao_logo.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--footer-->
+
+    <script>
+        // 베스트 상품 슬라이드
+        var swiper = new Swiper(".card", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            autoplay: {
+                delay: 1000,
+                /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+        });//지우면 안되요!
+
+        // 햄버거 버튼 슬라이드
+        $(document).ready(function () {
+            $('.h_btn_hover>a').on('click', function () {
+                $('.sidebar_menu').show().animate({
+                    right: 0
+                });
+            });
+            $('.close_btn>a').on('click', function () {
+                $('.sidebar_menu').animate({
+                    right: '-' + 100 + '%'
+                }, function () {
+                    $('.sidebar_menu').hide();
+                });
+            });
+
+        });
+
+        // aos 스크롤 효과 사용
+        AOS.init();
+
+
+        // 햄버거 버튼 슬라이드
+        function show() {
+            document.querySelector(".background").className = "background show";
+        }
+
+        function close() {
+            document.querySelector(".background").className = "background";
+        }
+        document.querySelector("#show").addEventListener('click', show);
+        document.querySelector("#letter_close").addEventListener('click', close);
+    </script>
+
+</body>
+
+</html>
