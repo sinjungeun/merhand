@@ -24,6 +24,7 @@ iframe {
 a {
     text-decoration: none;
     color: #000;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 img,
@@ -37,7 +38,7 @@ body {
     font-size: 20px;
     line-height: 40px;
     color: #340a69;
-
+    cursor: url(../img/cursor/cursor.cur), auto;
 }
 
 html {
@@ -67,24 +68,34 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.h_hamberger {
-    position: relative;
-    padding-right: 50px;
+
+.h_btn {
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger .h_btn_hover {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger:hover .h_btn {
-    display: none;
+    /* display: none; */
+    opacity: 1;
 }
 
 .h_hamberger:hover .h_btn_hover {
-    display: block;
-    transition: all 1s;
+    /* display: block; */
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 .sidebar_menu {
@@ -196,6 +207,7 @@ html {
     transition: background-size 0.5s;
     cursor: pointer;
     background-image: linear-gradient(transparent 85%, #deb3ff 15%);
+
 }
 
 .about_menu_inner li a,
@@ -209,6 +221,7 @@ html {
 .community_menu_inner li a:hover {
     background-size: 100% 100%;
     color: white;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 /* banner */
@@ -371,7 +384,6 @@ html {
 
 .griptok_box:hover .g_box_img {
     background: url(../img/index/product_hover_img1_2.png) no-repeat center;
-    /* transition: all 0.5s; */
 }
 
 /* .griptok_box:hover .g_hover_img {
@@ -614,6 +626,12 @@ html {
 .more {
     position: relative;
     padding-left: 250px;
+
+}
+
+.more_text {
+    display: inline-block;
+    opacity: 1;
 }
 
 .arrow {
@@ -635,6 +653,11 @@ html {
 
 .more:hover .arrow {
     left: 345px;
+    transition: all 0.5s;
+}
+
+.more:hover .more_text {
+    opacity: 0.5;
     transition: all 0.5s;
 }
 
@@ -711,7 +734,7 @@ html {
     margin-top: 20px;
     color: #d69cff;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     box-sizing: border-box;
     padding-top: 17px;
@@ -742,13 +765,15 @@ html {
     color: #d69cff;
     cursor: pointer;
     background-image: linear-gradient(transparent 85%, #deb3ff 15%);
+
 }
 
 .stationery_text a:hover,
 .acc_text a:hover,
 .living_text a:hover {
     background-size: 100% 100%;
-    color: white;
+    color: #5c3b85;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 
@@ -761,6 +786,10 @@ html {
 } */
 
 /* character */
+.c_overflow {
+    overflow: hidden;
+}
+
 #character {
     width: 1320px;
     margin: 0 auto;
@@ -917,7 +946,8 @@ html {
 
 .kei_talk {
     position: absolute;
-    top: 550px;
+    /* top: 550px; */
+    top: 0px;
     left: -160px;
     opacity: 0;
     z-index: 10;
@@ -987,10 +1017,11 @@ html {
 
 .poron_talk {
     position: absolute;
-    top: 440px;
-    left: 220px;
+    /* top: 440px; */
+    top: -70px;
+    left: 110px;
     opacity: 0;
-    z-index: 10;
+    z-index: 50;
 }
 
 .p_hover:hover .poron_hover,
@@ -1042,18 +1073,23 @@ html {
     width: 100%;
     height: 647px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .event_inner {
     display: flex;
-    padding-top: 120px;
-    padding-left: 120px;
-    /* transform: translateX(-50%); */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+    justify-content: space-between;
+
 }
 
 .event_text {
-    width: 399px;
-    height: 411px;
+    width: 22.5%;
     font-size: 50px;
     font-weight: 500;
     line-height: 60px;
@@ -1062,87 +1098,89 @@ html {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+}
+
+.e_t_inner {
+    width: 100%;
 }
 
 .flip {
-    width: 33%;
+    width: 24.5%;
+    /* height: 401px; */
     position: relative;
-    perspective: 1100px;
-    margin-right: 30px;
+    perspective: 1200px;
 }
 
-.event_box1 {
-    /* padding-right: 30px; */
+.event_box1,
+.event_box2,
+.event_box3 {
     width: 100%;
     height: 100%;
-    position: relative;
     transition: .4s;
     transform-style: preserve-3d;
 }
 
-.event_box_p {
-    text-align: center;
+.event_front {
+    width: 100%;
+    height: 100%;
     /* position: absolute;
-    top: 100px;
-    left: 0px; */
-    color: #ab82cc;
-    padding-top: 130px;
+    top: 0;
+    left: 0; */
+    backface-visibility: hidden;
+}
+
+.event_back {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.back_text {
+    padding-top: 100px;
+}
+
+.event_box_p {
+    position: absolute;
+    top: 40%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -111.5px;
+    z-index: 15;
+    text-align: center;
     box-sizing: border-box;
 }
 
+.event_box_a {
+    position: absolute;
+    top: 55%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -72px;
+    z-index: 15;
+    box-sizing: border-box;
+
+}
+
 .event_box_a a {
-    text-align: center;
     display: inline-block;
     background-color: #f3cfff;
     /* width: 170px;
     height: 65px; */
     padding: 5px 20px;
-    margin-left: 130px;
     border-radius: 33px;
     color: #340a69;
-    /* position: absolute;
-    top: 0px;
-    left: 0px; */
 }
 
 .event_box_a:hover a {
     background-color: #ab82cc;
     color: white;
     transition: all 0.5s;
-}
-
-.event_box2 {
-    /* width: 399px;
-    height: 411px; */
-    width: 100%;
-    height: 100%;
-    /* padding-right: 30px; */
-    position: relative;
-    transition: .4s;
-    transform-style: preserve-3d;
-}
-
-.event_box3 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: .4s;
-    transform-style: preserve-3d;
-}
-
-.event_front,
-.event_back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    color: #fff;
-}
-
-.event_back {
-    background: #f8e3ff;
-    transform: rotateY(180deg);
 }
 
 .flip:hover .event_box1,
@@ -1156,6 +1194,7 @@ html {
     width: 100%;
     height: 970px;
     background-color: #ffeeff;
+    overflow: hidden;
 }
 
 .contact_header {
@@ -1189,12 +1228,13 @@ html {
     box-sizing: border-box;
     padding-left: 50px;
     position: relative;
-    width: 100%;
+    width: 1700px;
+    margin: 0 auto;
 }
 
 .folder {
     width: 160px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding: 20px 0;
 }
 

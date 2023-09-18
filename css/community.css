@@ -24,6 +24,7 @@ iframe {
 a {
     text-decoration: none;
     color: #000;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 img,
@@ -37,7 +38,7 @@ body {
     font-size: 20px;
     line-height: 40px;
     color: #340a69;
-
+    cursor: url(../img/cursor/cursor.cur), auto;
 }
 
 html {
@@ -55,24 +56,34 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.h_hamberger {
-    position: relative;
-    padding-right: 50px;
+
+.h_btn {
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger .h_btn_hover {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger:hover .h_btn {
-    display: none;
+    /* display: none; */
+    opacity: 1;
 }
 
 .h_hamberger:hover .h_btn_hover {
-    display: block;
-    transition: all 1s;
+    /* display: block; */
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 .sidebar_menu {
@@ -211,6 +222,7 @@ html {
     position: relative;
 } */
 .notice_bg {
+    overflow: hidden;
     width: 100%;
     background-color: #effaff;
     position: relative;
@@ -274,6 +286,7 @@ html {
     top: 170px;
     left: -200px;
     opacity: 0;
+    z-index: 100;
 }
 
 .coin_window {
@@ -332,6 +345,7 @@ html {
 .coin_window:hover .coin_hover {
     opacity: 1;
     transition: all 1s;
+
 }
 
 /* .coin_window:hover .coin_window_inner {
@@ -693,6 +707,7 @@ html {
 
 .faq-box__question {
     cursor: pointer;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 .faq-box__question::after {
@@ -785,6 +800,7 @@ html {
     background-color: #5c3b85;
     color: white;
     transition: all 0.4s;
+
 }
 
 
@@ -984,7 +1000,6 @@ html {
 .f_inner {
     width: 1320px;
     margin: 0 auto;
-
 }
 
 .f_content {

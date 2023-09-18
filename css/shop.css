@@ -24,6 +24,7 @@ iframe {
 a {
     text-decoration: none;
     color: #000;
+    cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
 img,
@@ -32,12 +33,12 @@ video {
 }
 
 body {
-    min-width: 1450px;
+    min-width: 1650px;
     font-family: 'TheJamsil';
     font-size: 20px;
     line-height: 40px;
     color: #340a69;
-
+    cursor: url(../img/cursor/cursor.cur), auto;
 }
 
 html {
@@ -58,24 +59,34 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.h_hamberger {
-    position: relative;
-    padding-right: 50px;
+
+.h_btn {
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger .h_btn_hover {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 .h_hamberger:hover .h_btn {
-    display: none;
+    /* display: none; */
+    opacity: 1;
 }
 
 .h_hamberger:hover .h_btn_hover {
-    display: block;
-    transition: all 1s;
+    /* display: block; */
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 .sidebar_menu {
@@ -212,12 +223,14 @@ html {
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
+
 }
 
 .shop_products {
-    width: 1214px;
+    /* width: 1214px; */
     height: 1000px;
     align-items: flex-start;
+
 }
 
 .banner_absolute {
@@ -227,9 +240,14 @@ html {
 }
 
 .shop_banner {
-    width: 30% height: 870px;
+    width: 37%;
+    /* height: 870px; */
     position: sticky;
     top: 0px;
+}
+
+.shop_banner {
+    width: 100%;
 }
 
 .shop_roof h1 {
@@ -237,24 +255,28 @@ html {
 }
 
 .shop_best {
-    width: 1214px;
+    /* width: 1214px; */
     height: 870px;
     background-color: #fffcc5;
     text-align: center;
+    overflow: hidden;
 }
 
 .shop_rnb {
-    width: 70% height: 1000px;
+    width: 63%;
+    height: 1000px;
+
 }
 
 .shop_roof {
-    width: 1214px;
+    /* width: 1214px; */
     background: url(../img/shop/roof.png) no-repeat;
     height: 325px;
     z-index: 100;
     /* position: absolute;
     top: 0;
     left: 0; */
+    overflow: hidden;
 }
 
 .ul_inner ul {
@@ -365,6 +387,7 @@ html {
     width: 1215px;
     margin: 0px auto;
     position: relative;
+    overflow: hidden;
 }
 
 #shop_slide h1 {
@@ -413,6 +436,13 @@ html {
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
 }
 
+.img_box:hover img {}
+
+.swiper-slide a:hover .img_box img {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+}
+
 .img_box {
     width: 280px;
     height: 305px;
@@ -423,6 +453,16 @@ html {
     margin-left: -140px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.product_boxs a:hover .product_box img {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+}
+
+.product_box {
+    overflow: hidden;
 }
 
 .img_box img {
@@ -531,10 +571,11 @@ html {
 /* product */
 .product a {
     display: block;
+    margin-right: 36px;
 }
 
 .product {
-    width: 1214px;
+    /* width: 1214px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -544,11 +585,12 @@ html {
     padding-top: 80px;
     /* padding-left: 50px;
     padding-right: 50px; */
+    overflow: hidden;
 }
 
 .product_boxs {
     position: relative;
-    width: 1214px;
+    width: 26%;
     margin: 0 auto;
     margin-left: 50px;
     box-sizing: border-box;
@@ -569,7 +611,7 @@ html {
     margin-left: -140px; */
 }
 
-.porduct_text {
+.product_text {
     position: absolute;
     top: 310px;
     left: -32px;
@@ -581,7 +623,6 @@ html {
     top: 310px;
     left: 50%;
 } */
-
 
 
 .product_box_inner {
