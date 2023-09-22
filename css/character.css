@@ -880,6 +880,7 @@ html {
     padding-top: 10px;
     padding-left: 20px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .mbti_1_body {
@@ -985,7 +986,7 @@ html {
     box-sizing: border-box;
 }
 
-@keyframes mbti {
+/* @keyframes mbti {
     0% {
         transform: translateX(-100%);
     }
@@ -993,7 +994,7 @@ html {
     100% {
         transform: translateX(0);
     }
-}
+} */
 
 
 /* 포론 */
