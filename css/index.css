@@ -375,6 +375,7 @@ html {
     position: relative;
     background: #ffdbee;
     width: 100%;
+    overflow: hidden;
 }
 
 .g_img {
@@ -394,7 +395,32 @@ html {
 }
 
 .griptok_box:hover .g_box_img {
-    background: url(../img/index/product_hover_img1_2.png) no-repeat center;
+    background: url(../img/index/product_hover_1.png) no-repeat center;
+    background-size: cover;
+}
+
+.griptok_box:hover .ate_product {
+    left: -100px;
+    transition: all 0.5s;
+}
+
+.ate_product {
+    position: absolute;
+    top: 0;
+    left: -400px;
+    transition: all 0.5s;
+}
+
+.tero_product {
+    position: absolute;
+    top: 710px;
+    right: -50px;
+    z-index: 100;
+}
+
+.griptok_box:hover .tero_product {
+    transition: all 0.5s;
+    top: 420px;
 }
 
 /* .griptok_box:hover .g_hover_img {
@@ -409,13 +435,15 @@ html {
 .calender_text {
     height: 185px;
     background-color: #d5ffc2;
+    text-shadow: 0px 0px 5px #9bc986;
 }
 
 .c_box_img {
     height: 705px;
     width: 100%;
     position: relative;
-    background-color: #fbffd3;
+    background: #fbffd3;
+    overflow: hidden;
 }
 
 .c_img {
@@ -435,13 +463,28 @@ html {
 
 .calender_box:hover .c_box_img {
     opacity: 1;
-    background-image: url(../img/index/product_hover_img2_2.png);
-    /* transition: all 0.5s; */
+    background: url(../img/index/product_hover_2.png) no-repeat;
+    transition: all 0.5s;
+    background-size: cover;
+}
+
+.narin_product {
+    position: absolute;
+    top: 750px;
+    right: -40px;
+    z-index: 100;
+}
+
+.calender_box:hover .narin_product {
+    top: 350px;
+    right: -20px;
+    transition: all 0.5s;
 }
 
 .memo_text {
     height: 185px;
     background-color: #f6e7ff;
+    text-shadow: 0 0 5px #b88bd3;
 }
 
 .memo_box {
@@ -451,7 +494,8 @@ html {
 .m_box_img {
     height: 705px;
     position: relative;
-    background-color: #faf1ff;
+    background: #faf1ff;
+    overflow: hidden;
 }
 
 .m_img {
@@ -471,8 +515,21 @@ html {
 
 .memo_box:hover .m_box_img {
     opacity: 1;
-    background: url(../img/index/product_hover_img3_2.png) no-repeat center;
+    background: url(../img/index/product_hover_3.png) no-repeat center;
+    background-size: cover;
     /* transition: all 0.5s; */
+}
+
+.poron_product {
+    position: absolute;
+    top: 750px;
+    right: 0;
+    z-index: 100;
+}
+
+.memo_box:hover .poron_product {
+    top: 450px;
+    transition: all 0.5s;
 }
 
 .product_text_move {
@@ -694,6 +751,45 @@ html {
     background: url(../img/index/introduce_bg.png) no-repeat center;
     width: 100%;
     height: 795px;
+    position: relative;
+}
+
+.tero_move {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    z-index: 10;
+    animation: intro_move 1.5s alternate-reverse infinite;
+}
+
+.tero_move img {
+    width: 60%;
+}
+
+.ate_move {
+    position: absolute;
+    top: 380px;
+    right: -210px;
+    z-index: 10;
+    animation: intro_move 1.5s alternate-reverse infinite;
+}
+
+.ate_move img {
+    width: 55%;
+}
+
+@keyframes intro_move {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
 }
 
 #introduce>h1 {

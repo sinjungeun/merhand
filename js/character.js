@@ -271,6 +271,26 @@ $(document).ready(function () {
         // $('body').off('scroll touchmove mousewheel');
     });
 
+    // 스크롤 원하는 위치에 왔을때 스크롤 수정
+    // var jbOffset = $('.poron_box').offset();
+    /*선택자는 본인 구조에 맞게 수정*/
+    // $(window).scroll(function () {
+    //     if ($(document).scrollTop() > 969) {//여기 지정된 길이 이후부터 적용됩니다
+    //         var target = document.querySelector('.poron_box');
+    //         var player = target.animate([
+    //             { transform: 'scale(1, 1);' },
+    //             { transform: 'scale(1.2, 1.2)' },
+    //             { transform: 'transform: scale(1, 1);' }
+    //         ], {
+    //             duration: 1000,
+    //             delay: 700
+    //         });
+    //         // $(".mbti_1_bar").css({ 'transform': 'translateX(-100%);' })
+    //         //$('.poron_box').addClass("on");
+    //         // $('#nav').addClass("on");
+    //         /*선택자는 본인 구조에 맞게 수정, on클래스 만들어서 변경 원하는 스타일 주세요*/
+    //     }
+    // });
 });
 
 

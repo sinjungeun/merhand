@@ -397,12 +397,9 @@ body {
         transform: translateY(0px);
     }
 
-    50% {
-        transform: translateY(150px);
-    }
 
     100% {
-        transform: translateY(300px);
+        transform: translateY(450px);
     }
 }
 
