@@ -250,6 +250,38 @@ $(document).ready(function () {
         // $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         // $('body').off('scroll touchmove mousewheel');
     });
+    $('.notice_menu>a').on('click', function () {
+        $('.sidebar_menu').animate({
+            right: '-' + 100 + '%'
+        }, function () {
+            $('.sidebar_menu').hide();
+        });
+        $('html').css({ 'overflow': 'auto' }); //scroll hidden 해제
+    });
+    $('.faq_menu>a').on('click', function () {
+        $('.sidebar_menu').animate({
+            right: '-' + 100 + '%'
+        }, function () {
+            $('.sidebar_menu').hide();
+        });
+        $('html').css({ 'overflow': 'auto' }); //scroll hidden 해제
+    });
+    $('.review_menu>a').on('click', function () {
+        $('.sidebar_menu').animate({
+            right: '-' + 100 + '%'
+        }, function () {
+            $('.sidebar_menu').hide();
+        });
+        $('html').css({ 'overflow': 'auto' }); //scroll hidden 해제
+    });
+    $('.event_menu>a').on('click', function () {
+        $('.sidebar_menu').animate({
+            right: '-' + 100 + '%'
+        }, function () {
+            $('.sidebar_menu').hide();
+        });
+        $('html').css({ 'overflow': 'auto' }); //scroll hidden 해제
+    });
 
 });
 

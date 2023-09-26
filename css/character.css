@@ -35,10 +35,10 @@ a {
     cursor: url(../img/cursor/cursor_heart.cur), auto;
 }
 
-img,
+/* img,
 video {
     max-width: 100%;
-}
+} */
 
 body {
     min-width: 1650px;

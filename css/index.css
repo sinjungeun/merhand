@@ -752,11 +752,12 @@ html {
     width: 100%;
     height: 795px;
     position: relative;
+    overflow: hidden;
 }
 
 .tero_move {
     position: absolute;
-    top: 380px;
+    top: 260px;
     left: 0;
     z-index: 10;
     animation: intro_move 1.5s alternate-reverse infinite;
@@ -768,7 +769,7 @@ html {
 
 .ate_move {
     position: absolute;
-    top: 380px;
+    top: 260px;
     right: -210px;
     z-index: 10;
     animation: intro_move 1.5s alternate-reverse infinite;
